@@ -3,10 +3,12 @@ package application;
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
+import model.entities.Department;
 
 public class Main extends Application {
 	
@@ -38,4 +40,6 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
+
+	ObservableList<Department> obsList;
 }
